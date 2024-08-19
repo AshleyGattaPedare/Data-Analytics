@@ -76,3 +76,16 @@ top_5_spending_countries = spending_countries.head(5)
 
 print("Top 5 countries by spending in 2024:")
 print(top_5_spending_countries)
+
+
+#Make the menu line system 
+print('Hello and welcome to ....')
+option = input('Select what you would like to know: 1 - top 5 spending countries, 2 - show a graph comparing travellers in 2019 and 2024')
+
+if option == '1':
+   print(top_5_spending_countries)
+
+elif option == '2':
+   plt.savefig('Travelers_Comparison.png')
+else:
+   print('Unknown value. Please select 1, 2 or 3.')
